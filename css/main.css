@@ -1,0 +1,28 @@
+:root {
+/*	--bg-quote-color: #f8f9fa; */ /* bg-light / gray-100 */
+	--bg-shadow-color: #f8f9fa; /* gray-100 */
+	--quote-border-color: #e9ecef; /* gray-200 */
+/*	--bg-shadow-color: #e9ecef; */ /* gray-200 */
+}
+
+.quote-block {
+/*	background-color: var(--bg-quote-color); */
+	box-shadow: inset -2px -2px 8px 4px var(--bg-shadow-color);
+	border: 1px solid var(--quote-border-color);
+	padding: 0.5rem 0.5rem;
+}
+
+.bg-custom {
+	/* royal purple - blue gradient */
+	background: linear-gradient(to right, rgba(69, 39, 160, 1) 0%, rgba(40, 53, 147, 1) 100%);
+}
+
+/* Customized Bootstrap seletors */
+.card-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+

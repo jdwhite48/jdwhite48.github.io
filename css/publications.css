@@ -1,0 +1,38 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*
+References:
+- https://stackoverflow.com/a/60618241
+- https://github.com/w3c/csswg-drafts/issues/6738#issuecomment-946077892
+*/
+
+.pub-ol {
+	counter-reset: list-item;
+}
+
+.pub-ol[reversed] {
+    counter-reset: reversed(list-item);
+}
+
+.pub-ol[reversed][start] {
+  counter-reset: reversed(list-item) calc(attr(start integer) + 1);
+}
+
+.pub-ol > li {
+    list-style: none;
+    position: relative;
+	padding: 0.5em 0px;
+}
+
+.pub-ol > li:before {
+    content: "[" counter(list-item) "]";
+	font-family: math;
+    counter-increment: list-item 0; /* Already handled? */
+    left: -40px;
+    padding-right: 10px;
+    position: absolute;
+    text-align: right;
+    width: 40px;
+}

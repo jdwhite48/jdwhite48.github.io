@@ -25,6 +25,17 @@ summary {
 	font-weight: bold;
 }
 
+.date-item {
+	font-family: var(--tt-font);
+	padding-left: 2em;
+	padding-right: 0.5em;
+	text-align: right;
+}
+
+.date-list {
+	border-spacing: 1em;
+}
+
 .quote-block {
 /*	background-color: var(--bg-quote-color); */
 	box-shadow: inset -2px -2px 8px 4px var(--bg-shadow-color);

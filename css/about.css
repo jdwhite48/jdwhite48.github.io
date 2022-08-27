@@ -1,0 +1,12 @@
+#projects-list {
+	border-collapse: separate;
+}
+
+#projects-list .date-item {
+	padding: 0px;
+	width: 12%;
+}
+
+#education {
+	padding-left: 5em;
+}

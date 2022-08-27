@@ -95,4 +95,58 @@ summary {
 }
 
 
+.breadcrumbs {
+	padding: 0px 1em;
+	list-style: none;
+	white-space: nowrap;
+}
 
+.breadcrumbs li {
+	display: inline-block;
+	font-size: 18px;
+	margin: 0 9px 0 -10px;
+	padding: 0 20px;
+	position: relative;
+}
+
+.breadcrumbs li:first-of-type {
+	padding: 0px 20px 0px 0px;
+}
+
+.breadcrumbs li::before,
+.breadcrumbs li::after {
+    border-right: 1px solid #666666;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transform: skewX(45deg);   
+}
+.breadcrumbs li::after {
+    bottom: 1px;
+    top: auto;
+    transform: skewX(-45deg);
+}
+
+.breadcrumbs li:last-of-type::before, 
+.breadcrumbs li:last-of-type::after { 
+    display: none; 
+}
+
+.breadcrumbs li a {
+	font-weight: bold;
+}
+
+
+nav.breadcrumbs li+li:before {
+	padding: 8px;
+	content: "/\00a0";
+}
+
+nav.breadcrumbs li a {
+	color: #212529;/* gray-900 */
+}

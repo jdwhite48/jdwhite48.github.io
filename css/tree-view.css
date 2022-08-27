@@ -1,0 +1,7 @@
+.tree-view {
+	padding: 3px;
+}
+
+.tree-view > summary {
+	font-weight: normal;
+}

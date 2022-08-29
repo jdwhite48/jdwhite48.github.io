@@ -1,18 +1,15 @@
 :root {
-	--bg-color: white;
-	--bg-shadow-color: #f8f9fa; /* gray-100 */
-	--quote-border-color: #e9ecef; /* gray-200 */
-	--quote-text-color: #212529; /* gray-900 */
+	/* TODO: Fix toggle for light mode */
+	--bg-color: #191d21;
+	--bg-shadow-color: rgba(255,255,255,0.03);
+	--quote-border-color: rgba(255,255,255,0.125);
+	--quote-text-color: #f8f9fa;
 	/*--tt-font: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;*/
 	--tt-font: monospace;
 }
 
 tt {
 	font-family: var(--tt-font);
-}
-
-body {
-	background-color: var(--bg-color);
 }
 
 h2 {
@@ -23,6 +20,14 @@ h2 {
 
 summary {
 	font-weight: bold;
+}
+
+a {
+	color: #007bff;
+}
+
+.bi::before {
+	color: white;
 }
 
 .date-item {
@@ -85,6 +90,10 @@ summary {
 	line-height: 1.5em;
 	color: var(--quote-text-color);
 	background-color: var(--bg-color);
+}
+
+.bootstrap hr {
+	height: 1px !important;
 }
 
 /* Customized Bootstrap seletors */

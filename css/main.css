@@ -113,8 +113,11 @@ a {
 .breadcrumbs li {
 	display: inline-block;
 	font-size: 18px;
+	position: relative;
+}
+/*
 	margin: 0 9px 0 -10px;
-	padding: 0 20px;
+	padding: 0 15px;
 	position: relative;
 }
 
@@ -145,6 +148,7 @@ a {
 .breadcrumbs li:last-of-type::after { 
     display: none; 
 }
+*/
 
 .breadcrumbs li a {
 	font-weight: bold;
@@ -152,10 +156,13 @@ a {
 
 
 nav.breadcrumbs li+li:before {
-	padding: 8px;
-	content: "/\00a0";
+	padding: 1em;
+	/*content: "/\00a0";*/
+	content: ">";
+	font-family: var(--tt-font);
 }
 
-nav.breadcrumbs li a {
-	color: #212529;/* gray-900 */
+
+/*nav.breadcrumbs li a {
+	color: #212529;
 }

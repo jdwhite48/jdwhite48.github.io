@@ -8,27 +8,42 @@ References:
 - https://github.com/w3c/csswg-drafts/issues/6738#issuecomment-946077892
 */
 
-.pub-ol {
+.citation {
+	font-family: var(--tt-font);
+}
+
+h3 {
+	margin-bottom: 1em !important;
+}
+
+cite {
+	font-weight: bold;
+}
+
+.award {
+	font-weight: bold;
+	color: var(--lavender) !important;
+}
+
+.pubs-list {
 	counter-reset: list-item;
 }
 
-.pub-ol[reversed] {
+/* only works properly on firefox */
+/*
+.pubs-list[reversed] {
     counter-reset: reversed(list-item);
 }
 
-.pub-ol[reversed][start] {
+.pubs-list[reversed][start] {
   counter-reset: reversed(list-item) calc(attr(start integer) + 1);
 }
+*/
 
-.pub-ol > li {
-    list-style: none;
-    position: relative;
-	padding: 0.5em 0px;
-}
-
-.pub-ol > li:before {
+.pubs-list > li:before {
     content: "[" counter(list-item) "]";
-	font-family: math;
+/*	font-family: math; */
+	font-family: monospace;
     counter-increment: list-item 0; /* Already handled? */
     left: -40px;
     padding-right: 10px;

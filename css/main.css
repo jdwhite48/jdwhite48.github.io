@@ -4,9 +4,14 @@
 	--bg-shadow-color: rgba(255,255,255,0.03);
 	--quote-border-color: rgba(255,255,255,0.125);
 	--quote-text-color: #f8f9fa;
-	--lavender: #B57EDC;
-	--vivid-blue: #007bff;
-	--colonizer-purple: rgb(69, 39, 160);
+	/* hsv 252 76 69 --> 252 76 96*/
+	--colonizer-purple: rgb(69, 42, 175);
+	/* related to purple by: hsv 252 76 69 --> 252 69 96 */
+	--lavender: rgb(109, 75, 244);
+	/* triad color complement to that purple */
+	--bright-orange: rgb(175, 69, 42);
+	/* Google says analogous and I like the pairing */
+	--cool-blue: rgb(42, 82, 175);
 	--colonizer-blue: rgb(42, 53, 147);
 	/*--tt-font: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;*/
 	--tt-font: monospace;
@@ -22,6 +27,15 @@ h2 {
 	width: 100%;
 }
 
+hr.footnote-line {
+	/*
+	display: flex;
+	justify-content: flex-start;
+	*/
+	max-width: 30%;
+	margin: 0 0 1em 0;
+}
+
 details {
 	border: 1px solid var(--quote-border-color);
 	margin: 1em 0 1em 0;
@@ -35,19 +49,44 @@ details[open] > p {
 details > summary {
 	padding: 0;
 	font-weight: bold;
+	color: var(--lavender);
 }
 details[open] > summary {
 	margin-bottom: 1em;
 }
 
-:not(sup) > a {
-	color: var(--vivid-blue);
+.bootstrap .nav-link {
+	display: inline-block;
 }
 
+/* lined list */
+.line-div-list li tr {
+    list-style: none;
+    position: relative;
+	padding-bottom: 1em;
+	margin-bottom: 0.5em;
+}
+
+.line-div-list li:not(:last-child) tr:not(:last-child) {
+	border-bottom: 1px solid var(--secondary);
+}
+
+/* Overwrite bootstrap-dark -- make all "normal" links (not button link text) blue */
+
+a:not(.btn):not(.navbar-brand):not(.nav-link) > i:not(.nav-link) {
+	color: var(--lavender);
+}
+
+:not(.academicons) > a:not(.btn):not(.navbar-brand):not(.nav-link):not(.award) {
+	color: var(--lavender);
+}
+
+/*
 ::selection {
 	background-color: var(--lavender);
 	color: var(--bg-color);
 }
+(/
 
 /* title text */
 .display-4 {
@@ -136,7 +175,6 @@ details[open] > summary {
 	justify-content: space-around;
 	align-items: center;
 }
-
 
 .breadcrumbs {
 	padding: 0px 1em;

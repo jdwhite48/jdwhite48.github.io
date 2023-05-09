@@ -1,0 +1,45 @@
+.focus-list {
+	position: relative;
+	margin: 1em !important;
+	overflow: hidden;
+}
+
+ul.focus-list {
+	font-family: var(--tt-font);
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: -1px;
+}
+
+.focus-list > li {
+	flex-grow: 1;
+	flex-basis: auto;
+	margin: 0.25em 0px;
+	padding: 0px 1em;
+	text-align: center;
+}
+
+.focus-list > li:not(:first-child) {
+	border-left: 6px double var(--secondary);
+}
+
+.news-list {
+	margin-bottom: 0px;
+}
+
+.news-list tr {
+	border-color: var(--secondary);
+}
+
+.academicons {
+	text-align: center;
+	font-size: 4rem;
+	color: var(--secondary);
+}
+
+.bootstrap .academicons a {
+	color: var(--secondary);
+}

@@ -18,8 +18,12 @@
 	<!-- FontAwesome icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
 
+	<!-- Academicons icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha256-CylD++oS3IkJmSs/j4i1w0cv2wpVQRLLQqw/m+Fvxts=" crossorigin="anonymous">
+
 	<!-- Custom styles -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 
 	<title>Jacob White - Homepage</title>
 
@@ -45,13 +49,13 @@
 						<a class="nav-link" href="about.html">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="blog.html">Blog</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link" href="publications.html">Publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="index.html#contact">Contact</a>
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" rel="me" href="https://infosec.exchange/@enigcryptist" aria-label="Mastodon profile at Infosec Exchange" title="Mastodon profile @ infosec.exchange"><i class="bi bi-mastodon" style="opacity: 0.5;"></i></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://github.com/jdwhite48" aria-label="GitHub profile" title="GitHub profile"><i class="fa fa-github"></i></a>
@@ -59,9 +63,13 @@
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.linkedin.com/in/jdwhite48/" aria-label="LinkedIn profile" title="LinkedIn profile"><i class="fa fa-linkedin-square"></i></a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="mailto:white570@purdue.edu" aria-label="Email: white570 at purdue.edu" title="Email: white570@purdue.edu"><i class="fa fa-envelope"></i></a>
+					</li>
 				</ul>
 			</div>
 		</div>
+		<!-- TODO: Make dark mode toggle a navlink too -->
 		<button id="dark-mode-toggle" type="button" class="btn" data-toggle="button" aria-label="Toggle dark mode" title="Toggle dark mode" aria-pressed="true" onclick="toggleDarkMode()"><i id="dark-mode-toggle-icon" class="bi bi-sun-fill"></i></button>
 		<script>
 			function toggleDarkMode() {
@@ -85,12 +93,17 @@
 
 	<!-- Page Content -->
 	<div class="container" style="padding-top: 56px;">
-<!--
-		<div class="row align-items-center my-5">
-			<h2>Jacob White</h2>
-		</div>
--->
-		<div class="row align-items-center my-5">
+		<br>
+		<ul class="focus-list">
+			<li>cryptography</li>
+			<li>formal verification</li>
+			<li>privacy</li>
+			<li>advocacy + outreach</li>
+			<li>education</li>
+		</ul>
+		<br>
+
+		<div class="row align-items-center my-2">
 			<div class="col-lg-4">
 				<img class="img-fluid rounded-circle mb-4 mb-lg-0" src="media/Jacob_White.jpeg" alt="A picture of Jacob">
 			</div>
@@ -98,54 +111,108 @@
 			<div class="col-lg-7">
 				<div style="display: flex; flex-wrap: wrap; align-items: center;">
 					<h1>Jacob White</h1>
-					<span class="text-secondary" style="margin-left: 1em;">(<!--they/them or -->he/him)</span>
+					<span class="text-secondary" style="margin-left: 1em;">(he/him or they/them)</span>
 				</div>
 				<h3>Graduate Research Assistant</h3>
-				<h3 class="font-weight-light">Computer Science</h3>
+				<h3 class="font-weight-light">PhD Student, Computer Science (CS)</h3>
 				<h3 class="font-weight-light">Purdue University</h3>
-				<!-- TODO: 1-paragraph summary -->
+				<p>
+				My research centers around the efficient design of privacy-enhancing cryptographic systems, with a focus on usability. First, I aim to design cryptographic protocols and applications which balance privacy and attribution of a user's actions. Second, I aim to make it easier for non-experts to use complex security tools appropriately, especially zero-knowledge proofs. To support these goals, I leverage a number of interdisciplinary results in human factors, programming languages, formal verification, and automation.<!--/ergonomics to arrive at holistic yet practical solutions.-->
+				</p>
+				<p>
+					Beyond my research, I serve as the Purdue Graduate Student Government (PGSG) Senator for CS, advocating for fellow students and engaging closely with the department, university, and Greater Lafayette community. I also hone my computer security skills&mdash;and teach others&mdash;by playing and creating Capture The Flag (CTF) challenges with <tt>b01lers</tt>.					
+				</p>
+				<p>
+					See my <a href="./media/CV.pdf">CV</a> for more information.
+				</p>
 			</div>
 		</div>
 
+		<div class="row align-items-center">
+			<br><br>
+			<div class="col-md-12">
+				<a name="News"></a>
+			    <h2>News</h2>
+			    <table class="table table-condensed news-list" border=1 frame=void rules=rows><tbody>
+				    <tr>
+						<td style="border:none;" align="right">
+							<b><tt>04/26/2023</tt></b>
+						</td>
+						<td style="border:none;" width="80%">
+							<p>As a part of <tt>b01lers</tt>, I led the protocol design and documentation for car-fob security and authentication and presented our efforts in MITRE's attack/defense-style <a href="https://ectf.mitre.org/2023-ectf/">Embedded CTF</a>. We placed 6th out of 60 and received <b>Best Poster Award</b>!</p>
+						</td>
+				    </tr>
+					<tr>
+						<td style="border:none;" align="right">
+							<b><tt>03/25/2023</tt></b>
+						</td>
+						<td style="border:none;" width="80%">
+							<p>I and another student received 1st place in the <a href="https://www.cerias.purdue.edu/assets/symposium/2023/2023_CERIAS_LLNL_cyberfire_flyer.pdf">2023 CyberFire Challenge</a>, hosted by Lawrence Livermore National Labs!</p>
+						</td>
+				    </tr>
+					<tr>
+						<td style="border:none;" align="right">
+							<b><tt>12/12/2022</tt></b>
+						</td>
+						<td style="border:none;" width="80%">
+							<p>Our <a href="https://eprint.iacr.org/2022/878.pdf">paper</a> on issuer-agnostic anonymous credentials for proving complex identity statements, <tt>zk-creds</tt>, has been accepted to <a href="https://sp2023.ieee-security.org/">IEEE S&P 2023</a>! Thanks to Christina Garman and the other authors for your guidance and support!</p>
+						</td>
+				    </tr>
+					<!--
+				    <tr>
+						<td style="border:none;" align="right">
+							<b><tt>07/07/2022</tt></b>
+						</td>
+						<td style="border:none;" width="80%">
+							<p>I have pre-published my first paper on <tt>zk-creds</tt>: a flexible, issuer-agnostic anonymous credential toolkit for proving about complex identity statements.</p>
+						</td>
+				    </tr>
+					-->
+			    </tbody></table>
+			</div>
+		</div>
+		<br>
+
 		<!-- Cards -->
 		<div class="row">
-			<div id="academics" class="col-md-4 mb-5">
+			<div id="academics" class="col-md-6 mb-5">
 				<div class="card h-100">
 					<div class="card-body">
 						<h2 class="card-title">Academics</h2>
-						<p class="card-text">
-						As a 2nd-year PhD Student and member of the <a href="https://barc-purdue.github.io/">BARC</a> research lab at Purdue, I am conducting academic research under my advisor, <a href="https://www.cs.purdue.edu/homes/clg/index.html">Dr. Christina Garman</a>.
-<!--
-							My general interests lie at the intersection of information security with a myriad of other topics including formal verification, mathematics, human factors, and psychology.
--->
-						</p>
-							My current research interests focus on the efficient design and implementation of privacy-enhancing cryptographic systems. My goal is to make it easier to design and deploy real-world cryptographic systems which simultaneously support both user privacy and accountability.
-						</p>
+						<p class="card-text">As a 2nd-year PhD student and member of the <b>Boilers Applied Research in Cryptography</b> (<a href="https://barc-purdue.github.io/">BARC</a>) lab at Purdue, I conduct research on efficient privacy-enhancing cryptography, automation, and formal verification under my advisor, <a href="https://www.cs.purdue.edu/homes/clg/index.html">Dr. Christina Garman</a>.</p>
+						<p style="margin-bottom: 0;">I am also passionate about <b>mentoring and teaching</b> others, paying forward my education to help make the fields I study more accessible and equitable to everyone to learn and pursue themselves.</p>
+
+						<div class="academicons">
+							<a href="https://scholar.google.com/citations?user=P76w8aIAAAAJ" aria-label="Google Scholar profile" title="Google Scholar profile" target="_blank" rel="noopener noreferrer"><i class="nav-link ai ai-google-scholar"></i></a>
+							<!-- TODO: Add dblp -->
+							<a href="https://orcid.org/0000-0002-6850-2133" aria-label="ORCID profile" title="ORCID profile" target="_blank" rel="noopener noreferrer"><i class="nav-link ai ai-orcid"></i></a>
+							<a href="https://member.acm.org/~jacobwhite5" aria-label="ACM member card" title="ACM member card" target="_blank" rel="noopener noreferrer"><i class="nav-link ai ai-acm"></i></a>
+						</div>
 					</div>
 					<div class="card-footer">
-						<a class="btn btn-primary" href="about.html#courses">Courses</a>
+						<a class="btn btn-primary" href="about.html#courses">Coursework</a>
 						<a class="btn btn-primary" href="publications.html">Papers</a>
 					</div>
 				</div>
 			</div>
-			<div id="affiliation" class="col-md-4 mb-5">
+			<div id="affiliation" class="col-md-6 mb-5">
 				<div class="card h-100">
 					<div class="card-body">
-						<h2 class="card-title">Clubs && Affiliations</h2>
+						<h2 class="card-title">University &amp;&amp; Community Service</h2>
 						<p class="card-text">
-							I am an active member of Purdue's Computer Science Graduate Student Board <a href="https://www.cs.purdue.edu/gsa/index.html">[CSGSB]</a>, serving as the <b><a href="https://purduegradstudents.com/">PGSG</a> Senator for CS</b> during the 2022-2023 school year.
-							<!-- As a part of my duties, I listen to CS graduate student concerns, represent them in the Purdue Graduate Student Senate, and help draft bills and resolutions to the university. -->
-							If you are a current or prospective Purdue CS graduate student, please don't hesitate to <a href="index.html#contact">contact me</a> with questions or concerns!
+						I have served on Purdue's <a href="https://www.cs.purdue.edu/gsa/index.html">CS Graduate Student Board</a> as the <b><a href="https://purduegradstudents.com/">PGSG</a> Senator for CS</b> since 2022, advocating for graduate students with a particular focus on fairness and inclusion. If you are a current or prospective Purdue CS grad student, I'd love to hear from you!
 						</p>
 						<p class="card-text">
-							I am also an occasional member of Purdue's Capture the Flag Team, <a href="https://b01lers.com/"><tt>b01lers</tt></a>, where we compete against other teams in challenges related to computer security.
+							As an officer in <a href="https://b01lers.com/"><tt>b01lers</tt></a>, I not only compete in computer security challenges but also write blog posts, write-ups, and organize challenges and other events to teach others hands-on skills in computer security and crypto(graphy). A particular goal of mine is to make it easier for anyone&mdash;even outside university&mdash;to explore their interests in various aspects of information security and CS.
 						</p>
+						<!-- TODO: Add CSGSA/PGSG and b01lers logos here -->
 					</div>
 					<div class="card-footer">
 						<a class="btn btn-primary" href="about.html">About Me</a>
 					</div>
 				</div>
 			</div>
+			<!--
 			<div id="contact" class="col-md-4 mb-5">
 				<div class="card h-100">
 					<div class="card-body">
@@ -155,34 +222,30 @@
 							Purdue University
 							<br>
 							Lawson Computer Science Building
-							<br>
-							<b>PGSG Office Hours</b>: Tuesday 4:30p-5:30p on <a href="https://purdue-edu.zoom.us/j/98607927390?pwd=RWZvN01mM0JDTG5UOERJVFhwVGZTQT09">Zoom</a> (recorded), or by appointment
 							<br><br>
 							<h5>E-mail</h5>
-							<span class="bi bi-envelope" aria-hidden="true"></span>
-							<tt>white570 [at] purdue.edu</tt>
+							<span class="fa fa-envelope" aria-hidden="true"></span>
+							<tt style="margin-left: 0.5em;">white570 [at] purdue.edu</tt>
 							<br>
-							<div class="quote-block">
-								Appropriate subject headers:
-								<ul style="margin: 0;">
-									<li><tt>[PGSG]</tt>: CS grad student concerns (please use your Purdue email)</li>
-								</ul>
-							</div>
+							<ul style="margin: 0;">
+								<li><tt>[PGSG]</tt>: CS graduate student concerns (use Purdue email)</li>
+							</ul>
 						</p>
 					</div>
-
 					<div class="card-footer">
 						<a class="btn btn-primary" href="mailto:white570@purdue.edu">Contact Me</a>
 					</div>
 				</div>
 			</div>
+			-->
 		</div>
+		<br>
 	</div>
 
 	<!-- Footer -->
-	<footer class="py-5 bg-custom">
+	<footer class="py-3 bg-custom">
 		<div class="container">
-			<p class="m-0 text-center text-white">Copyright © 2022 Jacob White || <a href="blog.html#disclaimer">Disclaimer</a></p>
+			<p class="m-0 text-center text-white">Copyright © 2023 Jacob White</p>
 		</div>
 	</footer>
 

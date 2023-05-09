@@ -17,6 +17,9 @@
 	<!-- FontAwesome icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
 	
+	<!-- Academicons icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha256-CylD++oS3IkJmSs/j4i1w0cv2wpVQRLLQqw/m+Fvxts=" crossorigin="anonymous">
+
 	<!-- Custom styles -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/publications.css">
@@ -45,19 +48,22 @@
 						<a class="nav-link" href="about.html">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="blog.html">Blog</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="publications.html">Publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="index.html#contact">Contact</a>
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" rel="me" href="https://infosec.exchange/@enigcryptist" aria-label="Mastodon profile at Infosec Exchange" title="Mastodon profile @ infosec.exchange"><i class="bi bi-mastodon" style="opacity: 0.5;"></i></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://github.com/jdwhite48" aria-label="GitHub profile" title="GitHub profile"><i class="fa fa-github"></i></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.linkedin.com/in/jdwhite48/" aria-label="LinkedIn profile" title="LinkedIn profile"><i class="fa fa-linkedin-square"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="mailto:white570@purdue.edu" aria-label="Email: white570 at purdue.edu" title="Email: white570@purdue.edu"><i class="fa fa-envelope"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -85,25 +91,65 @@
 
 	<!-- Page Content -->
 	<div class="container" style="padding-top: 56px;">
-		<br>
+		<br><br>
 		<div id="conference" class="row">
 			<div class="col-md-12">
-				<h3>Conference Papers</h3>
-				<ol class="pub-ol" reversed>
-					<!--
-		 <li>Michael Rosenberg, Jacob White, Christina Garman, and Ian Miers. <cite>"<tt>zk-creds</tt>: Flexible Anonymous Credentials from zkSNARKs and Existing Identity Infrastructure</cite>. In Cryptology ePrint Archive, Paper 2022/878, 2022. <a href="https://eprint.iacr.org/2022/878">[ePrint]</a></li>
-					-->
-				</ol>
-				To be announced! <a href="mailto:white570@purdue.edu">Contact me</a> for more details.
+				<h3>Conference</h3>
+				<p class="text-muted">Pending publications: see below.</p>
 			</div>
 		</div>
+		<div id="posters" class="row">
+			<div class="col-md-12">
+				<h3>Posters</h3>
+				<ol class="pubs-list line-div-list">
+				<!--<ol class="pubs-list line-div-list" reversed>-->
+					<li>
+						<cite>Protected Automotive Remote Entry Device (PARED) Protocol</cite>.<br>
+						Siddharth Muralee, Muhammad Ibrahim, <u>Jacob White</u>, Bo-Shiun Yen, Ashwin Nambiar, Alan Ma<!-- (as <tt>b01lers</tt>)-->. In: MITRE Embedded Security Capture The Flag (eCTF) Poster Session, April 2023.<br>
+						<a class="award" href="https://credsverse.com/credentials/cb03f297-3253-4e0c-8f6a-9b6ca80154c7">BEST POSTER AWARD &mdash; MITRE eCTF 2023</a><br>
+						<a href="media/2023_eCTF_Purdue_Poster.pdf">[PDF]</a> <a href="https://ectf.mitre.org/wp-content/uploads/2023/04/2023_eCTF_Purdue_Poster.pdf">[MITRE]</a>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div id="presentations" class="row">
+			<div class="col-md-12">
+				<h3>Presentations</h3>
+				<ol class="pubs-list line-div-list">
+				<!--<ol class="pubs-list line-div-list" reversed>-->
+					<li class="text-muted">
+						<cite>Crash Course in Cryptography</cite>.<br> 
+						<u>Jacob White</u>, Bo-Shiun Yen (as <tt>b01lers</tt>). Presented to IUPUI's CTF club, April 2023.
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div id="reports" class="row">
+			<div class="col-md-12">
+				<h3>Technical Reports</h3>
+				<ol class="pubs-list line-div-list">
+				<!--<ol class="pubs-list line-div-list" reversed>-->
+					<!--<li class="text-muted"><u>Jacob White</u>, Adithya Bhat. <cite>Preprocessing Security of A<font style="font-variant: small-caps; font-variant-caps: small-caps;">scon</font> ciphersuite</cite>. Technical Report, 2023. <b>[CS 655 Final Project]</b></li>-->
+					<li>
+						<cite><tt>zk-creds</tt>: Flexible Anonymous Credentials from zkSNARKs and Existing Identity Infrastructure</cite>.<br>
+						Michael Rosenberg, <u>Jacob White</u>, Christina Garman, and Ian Miers. In: Cryptology ePrint Archive, Paper 2022/878, July 2022.<br>
+						<b>Accepted to IEEE S&amp;P (Oakland) 2023, Paper #427</b>.<br>
+						<a href="https://eprint.iacr.org/2022/878">[ePrint]</a>
+					</li>
+					<!--<li class="text-muted">Raushan Pandey, <u>Jacob White</u> [Alphabetical]. <cite>Signal Secure Messaging Protocol</cite>. Technical Report, 2022. <b>[CS 528 Final Project]</b></li>-->
+					<!--<li class="text-muted">Yinzhen Li, Varun Vora, <u>Jacob White</u> [Alphabetical]. <cite>Grover's Algorithm</cite>. Technical Report, 2021. <b>[CS 584 Final Project]</b></li>-->
+				</ol>
+			</div>
+		</div>
+		<br><br>
+
 
 	</div>
 
 	<!-- Footer -->
-	<footer class="py-5 bg-custom fixed-bottom">
+	<footer class="py-3 bg-custom fixed-bottom">
 		<div class="container">
-			<p class="m-0 text-center text-white">Copyright © 2022 Jacob White || <a href="blog.html#disclaimer">Disclaimer</a></p>
+			<p class="m-0 text-center text-white">Copyright © 2023 Jacob White</p>
 		</div>
 	</footer>
 

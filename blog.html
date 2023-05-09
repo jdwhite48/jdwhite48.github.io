@@ -18,6 +18,10 @@
 	<!-- FontAwesome icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
 
+	<!-- Academicons icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha256-CylD++oS3IkJmSs/j4i1w0cv2wpVQRLLQqw/m+Fvxts=" crossorigin="anonymous">
+
+
 	<!-- Custom styles -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -45,19 +49,22 @@
 						<a class="nav-link" href="about.html">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link" href="publications.html">Publications</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="index.html#contact">Contact</a>
+						<a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" rel="me" href="https://infosec.exchange/@enigcryptist" aria-label="Mastodon profile at Infosec Exchange" title="Mastodon profile @ infosec.exchange"><i class="bi bi-mastodon" style="opacity: 0.5;"></i></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://github.com/jdwhite48" aria-label="GitHub profile" title="GitHub profile"><i class="fa fa-github"></i></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.linkedin.com/in/jdwhite48/" aria-label="LinkedIn profile" title="LinkedIn profile"><i class="fa fa-linkedin-square"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="mailto:white570@purdue.edu" aria-label="Email: white570 at purdue.edu" title="Email: white570@purdue.edu"><i class="fa fa-envelope"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -87,16 +94,22 @@
 	<div class="container" style="padding-top: 56px;">
 		<div class="row align-items-center my-5">
 			<div class="col">
-				<h3 class="display-4">Cryptography and other Randomness: A Blog</h3>
-				<br>
-				<p>Welcome! Here you'll find me musing about a wide range of topics on my mind including cryptography, human factors (particularly, UI/UX and HCI), programming languages, math, and other nerdy and senseless things: really, anything more informal than a paper or other academic presentation that I find interesting. I'll be sure to cite (hopefully accessible) sources for both academics and normal people to continue reading. <tt>:P</tt></p>
- 
-				<p>I don't claim to be an expert in most of the topics covered in these posts; my goal here is to motivate and demonstrate my <i>own</i> learning as much as it is to share information which supports others'. I hope you'll join me in learning something new! <tt>:)</tt></p>
+				<div class="text-center">
+					<h3 class="display-4">Crypto and other Randomness: A Blog</h3>
+					<br>
+					<a class="disabled" href="https://www.flaticon.com/free-icon/maintenance_7069673" aria-current="website under construction icon" title="website under construction icon by kerismaker - Flaticon">
+						<img src="media/maintenance.png" style="width: 20%; height: auto;"></img>
+					</a>
+					<br>
+					<div class="text-muted">Blog is a work in progress...</div>
+					<br><br>
+				</div>
 
-				</summary>
 
+				<p>Here you'll find me musing about a wide range of topics including cryptography, human factors (UI/UX and HCI), programming languages, mathematics, etc. Really, whatever's on my mind besides research. The views expressed are purely my own, and do not reflect those of my employers or other institutions.</p>
+				<p>Also, a friendly reminder: NEVER "roll your own crypto". I don't make any guarantees of security or correctness in my blogs so, for your own sake, don't blindly use any code or techniques I talk about.
+				<!--
 				<details id="disclaimer">
-
 				<summary>
 					Obligatory Legal Disclaimer
 				</summary>
@@ -112,10 +125,7 @@
 				</i>
 				<hr class="hr-text" data-content="END LEGAL DISCLAIMER BLOCK">
 				</details>
-				<p class="text-secondary">TL;DR: 1) the views expressed are mine alone; 2) do not plagiarize my blog; 3) I'll cite my sources as well as humanly possible; and 4) I'm not liable for what others do with the contents of my blog.<div class="text-primary">I want to stress this last point: do <b>NOT</b> "roll your own crypto"! Trust a team of cryptographers or other experts to vet code (not just me) before you use it!</div></p>
-				<!-- I want to stress that last point: do <b>NOT</b> "roll your own crypto" or otherwise hack together any real applications based on what you find here.--><!-- ...peeping into the source code I see? The exclusion of this comment isn't a loophole :) -->  Feel free to <a href="index.html#contact">contact me</a> with any errors or typos, and I will make appropriate corrections!</p>
-
-				<p>Now, with that out of the way, here's some things you might find interesting...</p>
+				-->
 
 				<!-- TODO: Make this look better -->
 				<ul>
@@ -126,9 +136,9 @@
 	</div>
 
 	<!-- Footer -->
-	<footer class="py-5 bg-custom">
+	<footer class="py-3 bg-custom">
 		<div class="container">
-			<p class="m-0 text-center text-white">Copyright © 2022 Jacob White || <a href="blog.html#disclaimer">Disclaimer</a></p>
+			<p class="m-0 text-center text-white">Copyright © 2023 Jacob White</p>
 		</div>
 	</footer>
 

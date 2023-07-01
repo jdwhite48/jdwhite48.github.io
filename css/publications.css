@@ -26,7 +26,14 @@ cite {
 }
 
 .pubs-list {
+	/* list-style-type: none;*/
 	counter-reset: list-item;
+	padding-left: 0;
+}
+
+.pubs-list li {
+	list-style-type: none;
+	margin-left: 2em;
 }
 
 /* only works properly on firefox */

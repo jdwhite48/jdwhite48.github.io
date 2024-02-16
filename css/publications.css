@@ -29,11 +29,12 @@ cite {
 	/* list-style-type: none;*/
 	counter-reset: list-item;
 	padding-left: 0;
+	margin-bottom: 2em;
 }
 
 .pubs-list li {
 	list-style-type: none;
-	margin-left: 2em;
+	margin: 0.75em 0em 0.75em 2em;
 }
 
 /* only works properly on firefox */

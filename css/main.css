@@ -14,7 +14,20 @@
 	--cool-blue: rgb(42, 82, 175);
 	--colonizer-blue: rgb(42, 53, 147);
 	/*--tt-font: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;*/
+	--typography-text-font-family: "Roboto";
+	--typography-primary-font-family: "Roboto";
+	--typography-secondary-font-family: "Roboto Slab";
+
 	--tt-font: monospace;
+}
+
+.page {
+	padding-top: 6em;
+	margin-bottom: 2em;
+}
+
+body {
+	font-family: var(--typography-text-font-family), Sans-serif;
 }
 
 tt {

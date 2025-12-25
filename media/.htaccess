@@ -1,0 +1,8 @@
+<FilesMatch "\.(jpe?g|png|svgz?)$">
+	Header set X-RobotsTag "noindex, nofollow"
+</FilesMatch>
+
+<FilesMatch "\.pdf$">
+	Header set X-RobotsTag "nofollow"
+</FilesMatch>
+

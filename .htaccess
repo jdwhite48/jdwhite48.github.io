@@ -1,0 +1,14 @@
+<FilesMatch "\.(html?|css|js|php)$">
+	AddDefaultCharset UTF-8
+	DefaultLanguage en-US
+</FilesMatch>
+
+<FilesMatch "\.(jpe?g|png|svgz?)$">
+	Header set X-RobotsTag "noindex, nofollow"
+</FilesMatch>
+
+<FilesMatch "\.pdf$">
+	Header set X-RobotsTag "nofollow"
+</FilesMatch>
+
+ErrorDocument 404 /404.html
